@@ -1,0 +1,1 @@
+TODO: Can jpegtran take advantage of WITH_SIMD? (That would need nasm.)
