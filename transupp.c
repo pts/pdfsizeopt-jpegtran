@@ -1170,7 +1170,7 @@ transpose_critical_parameters (j_compress_ptr dstinfo)
   }
 }
 
-
+#if 0  /* Not needed for pdfsizeopt-jpegtran. */
 /* Adjust Exif image parameters.
  *
  * We try to adjust the Tags ExifImageWidth and ExifImageHeight if possible.
@@ -1325,7 +1325,7 @@ adjust_exif_parameters (JOCTET FAR * data, unsigned int length,
     offset += 12;
   } while (--number_of_tags);
 }
-
+#endif
 
 /* Adjust output image parameters as needed.
  *
