@@ -1,7 +1,9 @@
 #! /bin/bash --
 # by pts@fazekas.hu at Tue Oct  8 22:43:46 CEST 2013
 set -ex
+
 rm -f *.o
+
 gcc -s -W -Wall -Wno-unused-parameter -O3 -c -I. \
     -ffunction-sections -fdata-sections \
     cdjpeg.c jaricom.c jcapimin.c jcarith.c jchuff.c jcmarker.c \
