@@ -6,6 +6,7 @@ set -ex
 rm -f *.o
 
 i586-mingw32msvc-gcc -s -W -Wall -Wno-unused-parameter -O3 -c -I. \
+    -DUSE_SETMODE \
     -ffunction-sections -fdata-sections \
     cdjpeg.c jaricom.c jcapimin.c jcarith.c jchuff.c jcmarker.c \
     jcmaster.c jcomapi.c jcparam.c jcphuff.c jctrans.c jdapimin.c \
